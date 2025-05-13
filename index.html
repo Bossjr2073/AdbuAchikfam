@@ -339,14 +339,14 @@ h2 {
 }
 
 .poetic-text {
-  font-size: 1.1em;
-  line-height: 2;
   text-align: justify;
-  text-indent: 30px;
-  color: #f9f9f9;
-  opacity: 0;
-  animation: fadeSlideUp 1.5s ease 1.5s forwards;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: white;
+  padding: 1rem;
+  font-family: 'Segoe UI', sans-serif;
 }
+
 
 .golden-text {
   background: linear-gradient(90deg, #FFD700, #FFA500, #FFD700);
@@ -421,6 +421,101 @@ h2 {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  nav {
+    padding: 0.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .header-content {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .countdown {
+    font-size: 1.1rem;
+  }
+
+  .okamani-logo {
+    width: 150px;
+    margin-bottom: 15px;
+  }
+
+  .program-list ol {
+    font-size: 16px;
+  }
+
+  .modal-box {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .food-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-items: center;
+}
+
+@media (min-width: 600px) {
+  .food-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+  .poetic-section {
+    padding: 20px;
+    margin: 20px 10px;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  .subtitle {
+    font-size: 1.2em;
+  }
+
+  .poetic-text {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+
+  .metallic-gold-text,
+  .metallic-gold-text2,
+  .metallic-gold-text3 {
+    font-size: 22px;
+  }
+
+  .mitela {
+    font-size: 1.2em;
+  }
+}
+
+.logo-quote {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #fff; /* Change to your preferred color */
+  margin: 10px 20px;
+  line-height: 1.6;
+}
+
+.quote-author {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.95rem;
+  font-weight: normal;
+  color: #ffd700; /* Optional: Golden color for author */
+}
 
   </style>
 </head>
@@ -448,23 +543,26 @@ h2 {
     <div class="modal-box" id="okamaniModal">
       <button class="close-btn" onclick="closeModal()">❌</button>
       
-      <!-- Logo at the top with blank background -->
-      <img src="img18.jpeg" alt="Okamani Chitti Logo" class="okamani-logo">
-  <div class="section">
-    <h1 class="title">ADBU A'chik Nokdang</h1>
-<br>
+    <!-- Logo at the top with blank background -->
+<img src="img18.jpeg" alt="Okamani Chitti Logo" class="okamani-logo">
+
+<!-- Quote below the logo -->
+<p class="logo-quote">
+  "Mejalna bate da'al, da'al na bate knal aro knalna bate ambin sal, salsa batangrikrik ADBU A'chik Nokdang nambatrikrikangchina."
+  <br><span class="quote-author">~ Ada Manrik R Marak, former President of ADBU A'chik Nokdang.</span>
+</p>
+
+<div class="poetic-section">
     <h2 class="subtitle golden-text">OKAMANI CHITTI:</h2>
-    <p>
-    Ka'sara angni jongada aro noabirang, ADBU A'chik Nokdango adita bilsirangna na'simangni on'gile bakrimanichi da'o ADBU A'chik Nokdang dal'rorona
-    gita man'engaha aro indake nambataniko nikna man'e chinga namen katchabea aro na'simangni ia Nokdango bakrimaniara chingna namen gamchata.
-    Ia nokdangni adatang aro abitang ong'e na'simang chingko dilangaha aro dakchakangaha, iarangko chinga pangnan gisik ra'a aro ra'angkugen.
-    Indake ia Nokdango na'simang bidana songreani matchotna skang chinga re'baenggipa Sonibar Sal, May 17th tarikni 4:00 P.M somoio na'simangna watgrikani programko ong'atenga.
-    Uni gimin chingni ka'sara adatang aro abitangrang, chinga na'simangko ia program-ona somoirang apchang'ketanirang donggenchimoba re'bae bakko ra'epachina sakantikon mol'molatenga.
-    Na'simangni ia programo re'bae bak ra'aniara ADBU A'chik Nokdang-na namen katchaani ong'gen. Sakantikon niksona ka'dongsoenga.
-  </p>
-  <p><strong>Mitela.</strong></p>
+    <p class="poetic-text">
+  Ka·sara angni jongada aro noabirang, ADBU A·chik Nokdango adita bilsirangna na·simangni on·gile bakrimanichi da·o ADBU A·chik Nokdang dal·rorona gita man·engaha aro indake nambataniko nikna man·e chinga namen katchabea aro na·simangni ia Nokdango bakrimaniara chingna namen gamchata. Ia nokdangni adatang aro abitang ong·e na·simang chingko dilangaha aro dakchakangaha, iarangko chinga pangnan gisik ra·a aro ra·angkugen.
+  Indake ia Nokdango na·simang bidana songreani matchotna skang chinga re·baenggipa Sonibar Sal, May 17 tarikni 4:00 P.M somoio na·simangna watgrikani programko ong·atenga. Uni gimin chingni ka·sara adatang aro abitangrang, chinga na·simangko ia program·ona somoirang apchang·ketanirang donggenchimoba re·bae bakko ra·epachina sakantikon mol·molatenga.
+  Na·simangni ia programo re·bae bak ra·aniara ADBU A·chik Nokdang·na namen katchaani ong·gen. Sakantikon niksona ka·dongsoenga.
+</p>
+
+    <div class="mitela"><strong>Mitela.</strong></div>
   </div>
-    </div>
+</div>
 
 
     <div class="modal-box" id="programModal">
@@ -509,10 +607,10 @@ h2 {
       <button class="close-btn" onclick="closeModal()">❌</button>
   <h2 class="metallic-gold-text3">Location</h2>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.5846405548673!2d91.61090067511927!3d26.112474094022538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a43ec32252809%3A0x2188d01c97bdb87d!2sNeexotica%20Restaurant!5e0!3m2!1sen!2sin!4v1746115672003!5m2!1sen!2sin" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <p>Hotel Neexotica</p>
-      <p>Banquet Hall</p>
-      <p>Azara,Opp.Mountain Shadow</p>
-      <p> Guwahati - 781017</p>
+      <p>Hotel Neexotica,</p>
+      <p>Banquet Hall,</p>
+      <p>Azara,Opp.Mountain Shadow,</p>
+      <p> Guwahati - 781017.</p>
 
 
     </div>
@@ -561,7 +659,7 @@ const eventDate = new Date("May 17, 2025 16:00:00").getTime(); // Set to 17th Ma
 
     if (distance <= 0) {
       clearInterval(timer);
-      countdownEl.textContent = "🎉Somoi Ong'aha! 🎉";
+      countdownEl.textContent = "🎉Somoi Ong'aha!🎉";
       fireworksCanvas.style.display = "block";
       launchFireworks();
     } else {
